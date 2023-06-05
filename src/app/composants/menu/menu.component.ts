@@ -34,8 +34,8 @@ export class MenuComponent implements OnInit {
     {
       id: "2",
       titre: 'Articles',
-      icon: '',
-      url: 'fas fa-boxes',
+      icon: 'fas fa-boxes',
+      url: 'articles',
       sousMenu:
         [
           {
@@ -48,7 +48,7 @@ export class MenuComponent implements OnInit {
             id: "22",
             titre: 'Mouvements du stock',
             icon: 'fab fa-stack-overflow',
-            url: ''
+            url: 'mvtstk'
           }
         ]
     },
@@ -63,13 +63,13 @@ export class MenuComponent implements OnInit {
             id: "31",
             titre: 'Clients',
             icon: 'fas fa-users',
-            url: ''
+            url: 'clients'
           },
           {
             id: "32",
             titre: 'Commandes clients',
             icon: 'fas fa-shopping-basket',
-            url: ''
+            url: 'commandesclient'
           }
         ]
     },
@@ -84,21 +84,21 @@ export class MenuComponent implements OnInit {
             id: "41",
             titre: 'Fournisseurs',
             icon: 'fas fa-users',
-            url: ''
+            url: 'fournisseurs'
           },
           {
             id: "42",
             titre: 'Commandes fournisseurs',
             icon: 'fas fa-truck',
-            url: ''
+            url: 'commandesfournisseur'
           }
         ]
     },
     {
       id: "5",
       titre: 'Parametrage',
-      icon: '',
-      url: 'fas fa-cogs',
+      icon: 'fa-solid fa-gears',
+      url: '',
       sousMenu:
         [
           {
@@ -129,5 +129,6 @@ export class MenuComponent implements OnInit {
   navigate(url?:string) {
     this.router.navigate([url]);
   }
+
 }
 
